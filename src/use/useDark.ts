@@ -5,12 +5,20 @@ interface DarkState {
   toggleDark: () => void
 }
 
+export enum Theme {
+  DARK = 'dark',
+  LIGHT = 'light',
+}
+
 const STORAGE_KEY = '$$dark-mode$$'
 
-const TRUE = 'dark'
-const FALSE = 'light'
+const TRUE = Theme.DARK
+const FALSE = Theme.LIGHT
 
 const isDarkInitial = localStorage.getItem(STORAGE_KEY)
+export const globalIsDark = {
+  isDark: isDarkInitial === TRUE,
+}
 
 if (!isDarkInitial)
   localStorage.setItem(STORAGE_KEY, FALSE)
@@ -23,8 +31,10 @@ export const useDark = create<DarkState>(set => ({
 
 useDark.subscribe((state) => {
   const isDark = state.isDark
-  localStorage.setItem(STORAGE_KEY, isDark ? TRUE : FALSE)
+  const darkValue = isDark ? TRUE : FALSE
+  localStorage.setItem(STORAGE_KEY, darkValue)
   window.document.body.classList.toggle('dark', isDark)
+  globalIsDark.isDark = isDark
 })
 
 window.addEventListener('storage', (s) => {

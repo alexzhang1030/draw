@@ -1,5 +1,11 @@
 import { Fragment, useState } from 'react'
 import { clsx } from 'clsx'
+import { STATE, useDark, useRender } from '../use'
+import type { RenderCtx } from '../use'
+
+interface HandleCtx {
+  renderCtx: RenderCtx
+}
 
 interface HandleGroup {
   name: string
@@ -9,7 +15,7 @@ interface HandleGroup {
 interface Handle {
   name: string
   icon: string
-  handler: () => void
+  handler: (ctx: HandleCtx) => void
 }
 
 const handles: HandleGroup[] = [
@@ -19,15 +25,17 @@ const handles: HandleGroup[] = [
       {
         name: 'Select mode',
         icon: 'i-fluent:cursor-16-filled',
-        handler() {
-
+        handler({ renderCtx }) {
+          renderCtx.updateCursor('default')
+          renderCtx.currentState = STATE.MODE_SELECT
         },
       },
       {
         name: 'Move mode',
         icon: 'i-fluent:hand-left-16-filled',
-        handler() {
-
+        handler({ renderCtx }) {
+          renderCtx.updateCursor('grab')
+          renderCtx.currentState = STATE.MODE_MOVE
         },
       },
     ],
@@ -38,19 +46,25 @@ const handles: HandleGroup[] = [
       {
         name: 'Rectangle',
         icon: 'i-fluent:square-16-filled',
-        handler() {
+        handler({ renderCtx }) {
+          renderCtx.updateCursor('crosshair')
+          renderCtx.currentState = STATE.DRAW_SQUARE
         },
       },
       {
         name: 'Circle',
         icon: 'i-fluent:circle-16-filled',
-        handler() {
+        handler({ renderCtx }) {
+          renderCtx.updateCursor('crosshair')
+          renderCtx.currentState = STATE.DRAW_CIRCLE
         },
       },
       {
         name: 'Triangle',
         icon: 'i-fluent:triangle-16-filled',
-        handler() {
+        handler({ renderCtx }) {
+          renderCtx.updateCursor('crosshair')
+          renderCtx.currentState = STATE.DRAW_TRIANGLE
         },
       },
     ],
@@ -65,7 +79,9 @@ const styles = {
 }
 
 export function HandleWrapper() {
-  const [active, setActive] = useState(handles[0].name)
+  const [active, setActive] = useState(handles[0].handles[0].name)
+  const renderCtx = useRender()
+
   return <div className={styles.wrapper}>
     {
       handles.map((group, index) =>
@@ -81,7 +97,7 @@ export function HandleWrapper() {
             group.handles.map(handle =>
               <button className={clsx([styles.handle, active === handle.name ? styles.handleActive : styles.nonActive])}
                 onClick={() => {
-                  handle.handler()
+                  handle.handler({ renderCtx })
                   setActive(handle.name)
                 }} title={handle.name} key={handle.name}>
                   <div className={handle.icon} />
@@ -91,5 +107,14 @@ export function HandleWrapper() {
         </Fragment>,
       )
     }
+  </div>
+}
+
+export function DarkToggle() {
+  const darkState = useDark()
+  return <div className="fixed right-5 top-5">
+    <button onClick={() => darkState.toggleDark()}>
+      <div className={clsx([darkState.isDark ? 'i-carbon-moon' : 'i-carbon-light'])} />
+    </button>
   </div>
 }
