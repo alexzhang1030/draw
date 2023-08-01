@@ -112,9 +112,15 @@ export function HandleWrapper() {
 
 export function DarkToggle() {
   const darkState = useDark()
-  return <div className="fixed right-5 top-5">
-    <button onClick={() => darkState.toggleDark()}>
+  return <button onClick={() => darkState.toggleDark()}>
       <div className={clsx([darkState.isDark ? 'i-carbon-moon' : 'i-carbon-light'])} />
     </button>
-  </div>
+}
+
+export function GithubIcon() {
+  return <button onClick={() => {
+    window.open('https://github.com/alexzhang1030/draw/')
+  }}>
+    <div className="i-radix-icons:github-logo" />
+  </button>
 }

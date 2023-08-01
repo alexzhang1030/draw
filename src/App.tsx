@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { useRender } from './use'
-import { DarkToggle, HandleWrapper } from './components'
+import { DarkToggle, GithubIcon, HandleWrapper } from './components'
 
 function App() {
   const canvasRef = useRef<HTMLDivElement>(null)
@@ -15,7 +15,10 @@ function App() {
   return <div className="w-full h100vh overflow-hidden bg-white color-black dark:(bg-#212529 color-white) ">
     <div ref={canvasRef} className="w-full h-full"></div>
     <HandleWrapper />
-    <DarkToggle />
+    <div className="fixed top-5 right-5 flex gap4">
+      <GithubIcon />
+      <DarkToggle />
+    </div>
   </div>
 }
 
