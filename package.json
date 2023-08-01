@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
+    "leafer-ui": "1.0.0-beta.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "uttype": "^0.3.4"
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@antfu/eslint-config-react": "^0.39.8",
     "@iconify-json/carbon": "^1.1.18",
+    "@iconify-json/fluent": "^1.1.29",
     "@types/node": "^20.4.5",
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",

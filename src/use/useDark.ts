@@ -22,8 +22,9 @@ export const useDark = create<DarkState>(set => ({
 }))
 
 useDark.subscribe((state) => {
-  localStorage.setItem(STORAGE_KEY, isDarkInitial ? TRUE : FALSE)
-  window.document.body.classList.toggle('dark', state.isDark)
+  const isDark = state.isDark
+  localStorage.setItem(STORAGE_KEY, isDark ? TRUE : FALSE)
+  window.document.body.classList.toggle('dark', isDark)
 })
 
 window.addEventListener('storage', (s) => {

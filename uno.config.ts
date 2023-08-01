@@ -15,6 +15,9 @@ export default defineConfig({
       scale: 1.2,
     }),
   ],
+  shortcuts: [
+    ['flex-center', 'flex justify-center items-center'],
+  ],
   transformers: [
     transformerVariantGroup(),
     transformerDirectives(),
