@@ -11,29 +11,29 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
-    "leafer-ui": "1.0.0-rc.2",
+    "leafer-ui": "1.0.0-rc.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "uttype": "^0.6.1"
+    "uttype": "^0.6.2"
   },
   "devDependencies": {
     "@antfu/eslint-config-react": "^0.43.1",
     "@iconify-json/carbon": "^1.1.21",
-    "@iconify-json/fluent": "^1.1.35",
+    "@iconify-json/fluent": "^1.1.36",
     "@iconify-json/radix-icons": "^1.1.11",
-    "@types/node": "^20.6.5",
-    "@types/react": "^18.2.22",
-    "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.7.2",
-    "@unocss/reset": "^0.56.1",
+    "@types/node": "^20.8.2",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.9",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@unocss/reset": "^0.56.5",
     "@vitejs/plugin-react-swc": "^3.4.0",
     "eslint": "^8.50.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "typescript": "^5.2.2",
-    "unocss": "^0.56.1",
-    "vite": "^4.4.9",
-    "zustand": "^4.4.1"
+    "unocss": "^0.56.5",
+    "vite": "^4.4.10",
+    "zustand": "^4.4.2"
   },
   "eslintConfig": {
     "extends": "@antfu/eslint-config-react",
