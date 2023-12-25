@@ -11,20 +11,20 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
-    "leafer-ui": "1.0.0-rc.8",
+    "leafer-ui": "1.0.0-rc.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "uttype": "^0.7.4"
   },
   "devDependencies": {
     "@antfu/eslint-config-react": "^0.43.1",
-    "@iconify-json/carbon": "^1.1.26",
+    "@iconify-json/carbon": "^1.1.27",
     "@iconify-json/fluent": "^1.1.45",
     "@iconify-json/radix-icons": "^1.1.14",
     "@types/node": "^20.10.5",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@unocss/reset": "^0.58.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.56.0",
