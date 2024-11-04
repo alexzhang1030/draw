@@ -35,8 +35,8 @@ devDependencies:
     specifier: ^1.2.1
     version: 1.2.1
   '@types/node':
-    specifier: ^20.17.1
-    version: 20.17.1
+    specifier: ^22.8.7
+    version: 22.8.7
   '@types/react':
     specifier: ^18.3.12
     version: 18.3.12
@@ -69,7 +69,7 @@ devDependencies:
     version: 0.63.6(postcss@8.4.47)(typescript@5.6.3)(vite@5.4.10)
   vite:
     specifier: ^5.4.10
-    version: 5.4.10(@types/node@20.17.1)
+    version: 5.4.10(@types/node@22.8.7)
   zustand:
     specifier: ^5.0.0
     version: 5.0.0(@types/react@18.3.12)(react@18.3.1)
@@ -1512,10 +1512,10 @@ packages:
       '@types/unist': 2.0.7
     dev: true
 
-  /@types/node@20.17.1:
-    resolution: {integrity: sha512-j2VlPv1NnwPJbaCNv69FO/1z4lId0QmGvpT41YxitRtWlg96g/j8qcv2RKsLKe2F6OJgyXhupN1Xo17b2m139Q==}
+  /@types/node@22.8.7:
+    resolution: {integrity: sha512-LidcG+2UeYIWcMuMUpBKOnryBWG/rnmOHQR5apjn8myTQcx3rinFRn7DcIFhMnS0PPFSC6OafdIKEad0lj6U0Q==}
     dependencies:
-      undici-types: 6.19.6
+      undici-types: 6.19.8
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -1963,7 +1963,7 @@ packages:
       '@unocss/core': 0.63.6
       '@unocss/reset': 0.63.6
       '@unocss/vite': 0.63.6(typescript@5.6.3)(vite@5.4.10)
-      vite: 5.4.10(@types/node@20.17.1)
+      vite: 5.4.10(@types/node@22.8.7)
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -2153,7 +2153,7 @@ packages:
       chokidar: 3.6.0
       magic-string: 0.30.11
       tinyglobby: 0.2.9
-      vite: 5.4.10(@types/node@20.17.1)
+      vite: 5.4.10(@types/node@22.8.7)
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -2166,7 +2166,7 @@ packages:
       vite: ^4 || ^5
     dependencies:
       '@swc/core': 1.7.26
-      vite: 5.4.10(@types/node@20.17.1)
+      vite: 5.4.10(@types/node@22.8.7)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -4743,8 +4743,8 @@ packages:
       - supports-color
     dev: true
 
-  /undici-types@6.19.6:
-    resolution: {integrity: sha512-e/vggGopEfTKSvj4ihnOLTsqhrKRN3LeO6qSN/GxohhuRv8qH9bNQ4B8W7e/vFL+0XTnmHPB4/kegunZGA4Org==}
+  /undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
     dev: true
 
   /unist-util-stringify-position@2.0.3:
@@ -4782,7 +4782,7 @@ packages:
       '@unocss/transformer-directives': 0.63.6
       '@unocss/transformer-variant-group': 0.63.6
       '@unocss/vite': 0.63.6(typescript@5.6.3)(vite@5.4.10)
-      vite: 5.4.10(@types/node@20.17.1)
+      vite: 5.4.10(@types/node@22.8.7)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -4807,7 +4807,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@5.4.10(@types/node@20.17.1):
+  /vite@5.4.10(@types/node@22.8.7):
     resolution: {integrity: sha512-1hvaPshuPUtxeQ0hsVH3Mud0ZanOLwVTneA1EgbAM5LhaZEqyPWGRQ7BtaMvUrTDeEaC8pxtj6a6jku3x4z6SQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -4838,7 +4838,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.17.1
+      '@types/node': 22.8.7
       esbuild: 0.21.5
       postcss: 8.4.47
       rollup: 4.21.0
