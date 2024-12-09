@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "leafer-ui": "1.0.10",
+    "leafer-ui": "1.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "uttype": "^0.11.0"
@@ -24,16 +24,16 @@
     "@types/node": "^22.10.1",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
-    "@typescript-eslint/eslint-plugin": "^8.16.0",
-    "@unocss/reset": "^0.64.1",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@unocss/reset": "^0.65.1",
     "@vitejs/plugin-react-swc": "^3.7.2",
     "eslint": "^9.16.0",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.14",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
     "typescript": "^5.7.2",
-    "unocss": "^0.64.1",
-    "vite": "^6.0.1",
-    "zustand": "^5.0.1"
+    "unocss": "^0.65.1",
+    "vite": "^6.0.3",
+    "zustand": "^5.0.2"
   },
   "eslintConfig": {
     "extends": "@antfu/eslint-config-react",
