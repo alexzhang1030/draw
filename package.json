@@ -12,8 +12,8 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "leafer-ui": "1.5.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "uttype": "^0.12.1"
   },
   "devDependencies": {
@@ -21,10 +21,10 @@
     "@iconify-json/carbon": "^1.2.8",
     "@iconify-json/fluent": "^1.2.16",
     "@iconify-json/radix-icons": "^1.2.2",
-    "@types/node": "^22.13.13",
+    "@types/node": "^22.13.14",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
-    "@typescript-eslint/eslint-plugin": "^8.27.0",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
     "@unocss/reset": "^66.0.0",
     "@vitejs/plugin-react-swc": "^3.8.1",
     "eslint": "^9.23.0",
