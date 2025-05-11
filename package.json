@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "leafer-ui": "1.5.3",
+    "leafer-ui": "1.6.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "uttype": "^0.12.1"
@@ -19,21 +19,21 @@
   "devDependencies": {
     "@antfu/eslint-config-react": "^0.43.1",
     "@iconify-json/carbon": "^1.2.8",
-    "@iconify-json/fluent": "^1.2.19",
+    "@iconify-json/fluent": "^1.2.21",
     "@iconify-json/radix-icons": "^1.2.2",
-    "@types/node": "^22.14.1",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "@typescript-eslint/eslint-plugin": "^8.30.1",
-    "@unocss/reset": "^66.0.0",
+    "@types/node": "^22.15.17",
+    "@types/react": "^19.1.3",
+    "@types/react-dom": "^19.1.3",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@unocss/reset": "^66.1.1",
     "@vitejs/plugin-react-swc": "^3.9.0",
-    "eslint": "^9.25.0",
+    "eslint": "^9.26.0",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-react-refresh": "^0.4.20",
     "typescript": "^5.8.3",
-    "unocss": "^66.0.0",
-    "vite": "^6.3.2",
-    "zustand": "^5.0.3"
+    "unocss": "^66.1.1",
+    "vite": "^6.3.5",
+    "zustand": "^5.0.4"
   },
   "eslintConfig": {
     "extends": "@antfu/eslint-config-react",
